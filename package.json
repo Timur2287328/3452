@@ -1,0 +1,17 @@
+{
+  "name": "kontekstnoe-okno",
+  "private": true,
+  "scripts": {
+    "audio": "python scripts/make_audio.py && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/voices.ps1 && python scripts/make_audio.py --voices",
+    "studio": "remotion studio video/index.ts",
+    "render": "remotion render video/index.ts Film out/kontekstnoe_okno.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "cannon-es": "^0.20.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539",
+    "three": "^0.160.0"
+  }
+}
